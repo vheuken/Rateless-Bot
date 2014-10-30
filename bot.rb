@@ -1,5 +1,6 @@
 require 'cinch'
 require_relative 'plugins/coinflipper'
+require_relative 'plugins/greet'
 require_relative 'plugins/help'
 
 bot = Cinch::Bot.new do
@@ -9,6 +10,7 @@ bot = Cinch::Bot.new do
     c.channels = ["#rateless"]
 
     c.plugins.plugins = [CoinFlipper,
+			 Greet,
 			 Help]
   end
 end

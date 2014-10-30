@@ -6,11 +6,11 @@ class Help
   match "help"
 
   def execute(m)
-    m.reply("List of commands:", "/cprivmsg #{m.user.nick}")
+    m.user.notice("List of commands:")
     
     bot.plugins.each do |p|
       if p.respond_to? :help
-	m.reply(p.help, "/cprivmsg #{m.user.nick}")
+	m.user.notice(p.help)
       end
     end
   end
