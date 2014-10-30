@@ -1,5 +1,6 @@
 require 'cinch'
 require_relative 'plugins/coinflipper'
+require_relative 'plugins/help'
 
 bot = Cinch::Bot.new do
   configure do |c|
@@ -7,7 +8,8 @@ bot = Cinch::Bot.new do
     c.server = "irc.rizon.net"
     c.channels = ["#rateless"]
 
-    c.plugins.plugins = [CoinFlipper]
+    c.plugins.plugins = [CoinFlipper,
+			 Help]
   end
 end
 
