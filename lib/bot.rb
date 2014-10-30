@@ -7,7 +7,7 @@ bot = Cinch::Bot.new do
   configure do |c|
     c.nick = "Rateless-Bot"
     c.server = "irc.rizon.net"
-    c.channels = ["#rateless"]
+    c.channels = ["#rateless-test"]
 
     c.plugins.plugins = [CoinFlipper,
 			 Greet,
