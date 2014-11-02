@@ -5,6 +5,7 @@ require_relative 'plugins/dice_roller'
 require_relative 'plugins/dead_screamer'
 require_relative 'plugins/greet'
 require_relative 'plugins/help'
+require_relative 'plugins/magic_eight_ball'
 
 bot = Cinch::Bot.new do
   configure do |c|
@@ -16,7 +17,8 @@ bot = Cinch::Bot.new do
 			 DeadScreamer,
 			 DiceRoller,
 			 Greet,
-			 Help]
+			 Help,
+			 MagicEightBall]
   end
 end
 
