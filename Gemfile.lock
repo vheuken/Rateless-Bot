@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/vheuken/zombie_dice.git
+  revision: ca93b5dd82673b222237b21de206722ffc2eed15
+  specs:
+    zombie_dice (0.0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -10,3 +16,4 @@ PLATFORMS
 DEPENDENCIES
   cinch
   daemons
+  zombie_dice!
