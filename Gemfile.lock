@@ -1,8 +1,15 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.3.6)
     cinch (2.1.0)
     daemons (1.1.9)
+    htmlentities (4.3.2)
+    multi_json (1.10.1)
+    video_info (2.3.2)
+      addressable
+      htmlentities
+      multi_json
 
 PLATFORMS
   ruby
@@ -10,3 +17,4 @@ PLATFORMS
 DEPENDENCIES
   cinch
   daemons
+  video_info
