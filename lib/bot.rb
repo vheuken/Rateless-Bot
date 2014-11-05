@@ -9,6 +9,7 @@ require_relative 'plugins/greet'
 require_relative 'plugins/help'
 require_relative 'plugins/magic_eight_ball'
 require_relative 'plugins/zombie_dice_player'
+require_relative 'plugins/video_title'
 
 bot = Cinch::Bot.new do
   configure do |c|
@@ -22,6 +23,7 @@ bot = Cinch::Bot.new do
 			 Greet,
 			 Help,
 			 MagicEightBall,
+                         VideoTitle,
                          ZombieDicePlayer]
   end
 end

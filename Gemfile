@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
 gem 'cinch'
 gem 'daemons'
+gem 'video_info'
 gem 'zombie_dice', :git => 'https://github.com/vheuken/zombie_dice.git'
