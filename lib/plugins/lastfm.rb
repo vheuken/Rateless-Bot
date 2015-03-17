@@ -9,10 +9,11 @@ class LastFM
     @lastfm = Lastfm.new("FOO", "BAR")
   end
 
-  match "lastfm"
+  match /lastfm [^\s-]/
 
   def execute(m)
-    scrobbles = @lastfm.user.get_recent_tracks(:user => 'dormothenord')
+    user = m.message.split('!lastfm ')[1]
+    scrobbles = @lastfm.user.get_recent_tracks(:user => user)
     track = scrobbles[0]
     
 
