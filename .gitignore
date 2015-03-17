@@ -35,3 +35,6 @@ build/
 
 # aptana studio project file
 .project
+
+# vim thing
+*.swp
