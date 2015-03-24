@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'rateless_bot'
+
+f = RatelessBot::Foo.new
+f.bar
