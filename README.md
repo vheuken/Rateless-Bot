@@ -12,7 +12,14 @@ Once you have RubyGems, simply install it like so:
 
 ## Usage
 
-TODO: Write usage instructions here
+    $ rateless_bot -h
+    Usage: rateless_bot [options]
+            --nick NICK                  Bot's nick (required)
+            --server SERVER              IRC server (required)
+            --channel CHANNEL            IRC channel (required)
+            --lastfm-api-key KEY         LastFM API key
+            --lastfm-api-secret SECRET   LastFM secret API key
+        -h, --help                       Prints this help
 
 ## Development
 
