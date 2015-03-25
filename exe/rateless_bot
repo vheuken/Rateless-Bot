@@ -8,6 +8,18 @@ options = {}
 OptionParser.new do |opts|
   opts.banner = "Usage: rateless_bot [options]"
 
+  opts.on("--nick NICK", "Bot's nick") do |nick|
+    options[:nick] = nick
+  end
+
+  opts.on("--server SERVER", "IRC server") do |server|
+    options[:server] = server
+  end
+
+  opts.on("--channel CHANNEL", "IRC channel") do |channel|
+    options[:channel] = '#' + channel
+  end
+
   opts.on("--lastfm-api-key=KEY", "LastFM API key") do |key|
     options[:lastfm_api_key] = key
   end
@@ -21,12 +33,13 @@ OptionParser.new do |opts|
     exit
   end
 end.parse!
+puts options
 
 bot = Cinch::Bot.new do
   configure do |c|
-    c.nick = "Rateless-Bot"
-    c.server = "irc.rizon.net"
-    c.channels = ["#ratelesstest"]
+    c.nick = options[:nick]
+    c.server = options[:server]
+    c.channels << options[:channel]
 
     c.plugins.plugins = [CoinFlipper,
                          DiceRoller,
