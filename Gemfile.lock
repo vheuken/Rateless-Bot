@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rateless_bot (0.1.0)
+    rateless_bot (0.2.0)
       cinch
       lastfm
       video_info
