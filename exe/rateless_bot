@@ -8,15 +8,15 @@ options = {}
 OptionParser.new do |opts|
   opts.banner = "Usage: rateless_bot [options]"
 
-  opts.on("--nick NICK", "Bot's nick") do |nick|
+  opts.on("--nick NICK", "Bot's nick (required)") do |nick|
     options[:nick] = nick
   end
 
-  opts.on("--server SERVER", "IRC server") do |server|
+  opts.on("--server SERVER", "IRC server (required)") do |server|
     options[:server] = server
   end
 
-  opts.on("--channel CHANNEL", "IRC channel") do |channel|
+  opts.on("--channel CHANNEL", "IRC channel (required)") do |channel|
     options[:channel] = '#' + channel
   end
 
