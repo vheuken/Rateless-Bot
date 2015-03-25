@@ -11,6 +11,7 @@ Once you have RubyGems, simply install it like so:
     $ gem install rateless_bot
 
 ## Usage
+Launch Options:
 
     $ rateless_bot -h
     Usage: rateless_bot [options]
@@ -21,6 +22,15 @@ Once you have RubyGems, simply install it like so:
             --lastfm-api-secret SECRET   LastFM secret API key
         -h, --help                       Prints this help
 
+Interacting with the bot:
+
+    <vheuken> !help
+    -Rateless-Bot_- List of commands:
+    -Rateless-Bot_- !flipcoin - flips a coin
+    -Rateless-Bot_- !roll XdY - rolls dice (replace X with number of dice and Y with number of sides)
+    -Rateless-Bot_- !lastfm USERNAME - gets the most recently listened-to track for a given user
+    -Rateless-Bot_- !8ball - Magic Eight Ball
+    
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
