@@ -2,4 +2,18 @@
 
 require 'rateless_bot'
 
+bot = Cinch::Bot.new do
+  configure do |c|
+    c.nick = "Rateless-Bot"
+    c.server = "irc.rizon.net"
+    c.channels = ["#rateless"]
+
+    c.plugins.plugins = [CoinFlipper,
+			 DiceRoller,
+			 Help,
+			 MagicEightBall,
+                         VideoTitle]
+  end
+end
+
 bot.start
