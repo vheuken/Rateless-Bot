@@ -24,4 +24,5 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "cinch"
   spec.add_dependency "video_info"
+  spec.add_dependency "lastfm"
 end

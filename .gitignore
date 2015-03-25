@@ -1,13 +1,14 @@
 /.bundle/
 /.yardoc
-/Gemfile.lock
-/_yardoc/
 /coverage/
 /doc/
 /pkg/
 /spec/reports/
 /tmp/
 *.gem
+
+# aptana studio project file
+.project
 
 # vim swp file
 *.swp
