@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{An IRC Bot}
 #  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "https://github.com/vheuken/Rateless-Bot"
+  spec.homepage      = "https://github.com/vheuken/rateless_bot"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
