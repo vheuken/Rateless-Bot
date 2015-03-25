@@ -20,11 +20,11 @@ OptionParser.new do |opts|
     options[:channel] = '#' + channel
   end
 
-  opts.on("--lastfm-api-key=KEY", "LastFM API key") do |key|
+  opts.on("--lastfm-api-key KEY", "LastFM API key") do |key|
     options[:lastfm_api_key] = key
   end
 
-  opts.on("--lastfm-api-secret=SECRET", "LastFM secret API key") do |secret|
+  opts.on("--lastfm-api-secret SECRET", "LastFM secret API key") do |secret|
     options[:lastfm_api_secret] = secret
   end
 
