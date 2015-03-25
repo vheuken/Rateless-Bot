@@ -6,7 +6,7 @@ class LastFM
 
   def initialize(*args)
     super
-    @lastfm = Lastfm.new("FOO", "BAR")
+    @lastfm = Lastfm.new(config[:api_key], config[:api_secret])
   end
 
   match /lastfm [^\s-]/

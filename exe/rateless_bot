@@ -1,18 +1,37 @@
 #!/usr/bin/env ruby
 
 require 'rateless_bot'
+require 'optparse'
 
+options = {}
+OptionParser.new do |opts|
+  opts.on("--lastfm-api-key=LASTFM_API_KEY") do |key|
+    options[:lastfm_api_key] = key
+  end
+  opts.on("--lastfm-api-secret=:LASTFM_API_SECRET") do |secret|
+    options[:lastfm_api_secret] = secret
+  end
+end.parse!
+p options
 bot = Cinch::Bot.new do
   configure do |c|
     c.nick = "Rateless-Bot"
     c.server = "irc.rizon.net"
-    c.channels = ["#rateless"]
+    c.channels = ["#ratelesstest"]
 
     c.plugins.plugins = [CoinFlipper,
-			 DiceRoller,
-			 Help,
-			 MagicEightBall,
+                         DiceRoller,
+                         Help,
+                         LastFM,
+                         MagicEightBall,
                          VideoTitle]
+
+    c.plugins.options = {
+      LastFM => { 
+        :api_key => options[:lastfm_api_key],
+        :api_secret => options[:lastfm_api_secret]
+      }
+    }
   end
 end
 
