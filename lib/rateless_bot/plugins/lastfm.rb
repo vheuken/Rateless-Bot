@@ -2,6 +2,10 @@ require 'cinch'
 require 'lastfm'
 
 class LastFM
+  def help
+    '!lastfm USERNAME - get a given user\'s most recently scrobbled track'
+  end
+
   include Cinch::Plugin
 
   def initialize(*args)
@@ -15,7 +19,7 @@ class LastFM
     user = m.message.split('!lastfm ')[1]
     scrobbles = @lastfm.user.get_recent_tracks(:user => user)
     track = scrobbles[0]
-    
+
 
     m.reply make_track_str(track)
   end
