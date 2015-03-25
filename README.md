@@ -1,22 +1,12 @@
 # RatelessBot
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rateless_bot`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This is an IRC Bot that I made for my IRC channel. I figured other people might want to use it.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+If you haven't already, install RubyGems. You can do this with your package manager or with [RVM](https://rvm.io)
 
-```ruby
-gem 'rateless_bot'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Once you have RubyGems, simply install it like so:
 
     $ gem install rateless_bot
 
