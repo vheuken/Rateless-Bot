@@ -2,5 +2,4 @@
 
 require 'rateless_bot'
 
-f = RatelessBot::Foo.new
-f.bar
+bot.start

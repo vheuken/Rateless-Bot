@@ -1,9 +1,5 @@
 require "rateless_bot/version"
+require "rateless_bot/bot"
 
 module RatelessBot
-  class Foo
-    def bar
-      puts "yoyoyo keep it in a lowflow"
-    end
-  end
 end
