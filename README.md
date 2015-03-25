@@ -1,4 +1,4 @@
-# RatelessBot
+# Rateless Bot
 
 This is an IRC Bot that I made for my IRC channel. I figured other people might want to use it.
 
