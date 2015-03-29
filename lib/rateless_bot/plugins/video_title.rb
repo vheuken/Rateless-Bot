@@ -8,7 +8,7 @@ class VideoTitle
   listen_to :message
 
   def listen(m)
-    if m.message.match(/youtube.com\/watch\?v=/)
+    if m.message.match(/youtube.com\/watch\?/)
       video_url = get_url(m.message)
 
       m.reply get_video_title(video_url)
@@ -16,7 +16,7 @@ class VideoTitle
   end
 
   def get_url(message)
-    index = message.index("youtube.com\/watch\?v=")
+    index = message.index("youtube.com\/watch\?")
     message[index..message.length].split(' ')[0]
   end
 
