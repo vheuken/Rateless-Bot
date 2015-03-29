@@ -2,6 +2,10 @@ require 'cinch'
 require 'zombie_dice'
 
 class ZombieDicePlayer
+  def help
+    '!zd start - starts a game of Zombie Dice'
+  end
+
   include ZombieDice
   include Cinch::Plugin
 
