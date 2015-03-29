@@ -46,7 +46,8 @@ bot = Cinch::Bot.new do
                          Help,
                          LastFM,
                          MagicEightBall,
-                         VideoTitle]
+                         VideoTitle,
+			 ZombieDicePlayer]
 
     c.plugins.options = {
       LastFM => {
