@@ -25,11 +25,11 @@ Launch Options:
 Interacting with the bot:
 
     <vheuken> !help
-    -Rateless-Bot_- List of commands:
-    -Rateless-Bot_- !flipcoin - flips a coin
-    -Rateless-Bot_- !roll XdY - rolls dice (replace X with number of dice and Y with number of sides)
-    -Rateless-Bot_- !lastfm USERNAME - gets the most recently listened-to track for a given user
-    -Rateless-Bot_- !8ball - Magic Eight Ball
+    -Rateless-Bot- List of commands:
+    -Rateless-Bot- !flipcoin - flips a coin
+    -Rateless-Bot- !roll XdY - rolls dice (replace X with number of dice and Y with number of sides)
+    -Rateless-Bot- !lastfm USERNAME - gets the most recently listened-to track for a given user
+    -Rateless-Bot- !8ball - Magic Eight Ball
     
 ## Development
 
