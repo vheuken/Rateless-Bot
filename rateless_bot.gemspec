@@ -23,6 +23,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
 
   spec.add_dependency "cinch"
-  spec.add_dependency "video_info"
   spec.add_dependency "lastfm"
 end
