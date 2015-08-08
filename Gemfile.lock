@@ -1,7 +1,6 @@
 GIT
-  remote: https://github.com/vheuken/video_info.git
-  revision: 177c86440e931acfb6f0b0359da9b4ae51c4c104
-  branch: youtube-scraper
+  remote: git://github.com/thibaudgg/video_info.git
+  revision: 8fd843d64cad63a2b8077010032c526078e27272
   specs:
     video_info (2.4.2)
       addressable
@@ -14,14 +13,14 @@ GIT
 PATH
   remote: .
   specs:
-    rateless_bot (0.3.2)
+    rateless_bot (0.3.3)
       cinch
       lastfm
 
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (4.2.1)
+    activesupport (4.2.3)
       i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
@@ -29,28 +28,28 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.3.8)
     ansi (1.5.0)
-    ast (2.0.0)
-    cinch (2.2.5)
-    htmlentities (4.3.3)
+    ast (2.1.0)
+    cinch (2.2.6)
+    htmlentities (4.3.4)
     httparty (0.13.5)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
     i18n (0.7.0)
     iso8601 (0.8.6)
     json (1.8.3)
-    lastfm (1.26.0)
+    lastfm (1.27.0)
       activesupport (>= 3.2.0)
       httparty
       xml-simple
-    minitest (5.7.0)
-    multi_json (1.11.0)
+    minitest (5.8.0)
+    multi_json (1.11.2)
     multi_xml (0.5.5)
-    oga (1.0.1)
+    oga (1.2.1)
       ast
       ruby-ll (~> 2.1)
     open_uri_redirections (0.2.1)
     rake (10.4.2)
-    ruby-ll (2.1.1)
+    ruby-ll (2.1.2)
       ansi
       ast
     thread_safe (0.3.5)
@@ -68,4 +67,4 @@ DEPENDENCIES
   video_info!
 
 BUNDLED WITH
-   1.10.2
+   1.10.6
