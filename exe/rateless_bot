@@ -28,11 +28,16 @@ OptionParser.new do |opts|
     options[:lastfm_api_secret] = secret
   end
 
+  opts.on("--open-weather-map-api-key KEY", "OpenWeatherMap API key") do |weather_key| 
+    options[:open_weather_map_api_key] = weather_key
+  end
+
   opts.on("-h", "--help", "Prints this help") do
     puts opts
     exit
   end
 end.parse!
+
 puts options
 
 bot = Cinch::Bot.new do
@@ -46,13 +51,15 @@ bot = Cinch::Bot.new do
                          Help,
                          LastFM,
                          MagicEightBall,
-                         VideoTitle]
+                         VideoTitle,
+			 Weather]
 
     c.plugins.options = {
       LastFM => {
         :api_key => options[:lastfm_api_key],
         :api_secret => options[:lastfm_api_secret]
-      }
+      },
+      Weather => { :api_key => options[:open_weather_map_api_key] }
     }
   end
 end

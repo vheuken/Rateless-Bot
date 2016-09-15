@@ -22,6 +22,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.9"
   spec.add_development_dependency "rake", "~> 10.0"
 
-  spec.add_dependency "cinch"
-  spec.add_dependency "lastfm"
+  spec.add_dependency "cinch", "2.3.2"
+  spec.add_dependency "lastfm", "1.27.1"
+  spec.add_dependency "open-weather", "~> 0.12"
+  spec.add_dependency "video_info", "2.6.1"
 end

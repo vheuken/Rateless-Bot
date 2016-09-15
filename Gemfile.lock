@@ -1,53 +1,41 @@
-GIT
-  remote: git://github.com/thibaudgg/video_info.git
-  revision: 8fd843d64cad63a2b8077010032c526078e27272
-  specs:
-    video_info (2.4.2)
-      addressable
-      htmlentities
-      iso8601
-      multi_json (~> 1.11)
-      oga
-      open_uri_redirections
-
 PATH
   remote: .
   specs:
-    rateless_bot (0.3.3)
-      cinch
-      lastfm
+    rateless_bot (0.3.4)
+      cinch (= 2.3.2)
+      lastfm (= 1.27.1)
+      open-weather (~> 0.12)
+      video_info (= 2.6.1)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (4.2.3)
+    activesupport (5.0.0.1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (~> 0.7)
-      json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
-      thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    addressable (2.3.8)
     ansi (1.5.0)
-    ast (2.1.0)
-    cinch (2.2.6)
-    htmlentities (4.3.4)
-    httparty (0.13.5)
-      json (~> 1.8)
+    ast (2.3.0)
+    cinch (2.3.2)
+    concurrent-ruby (1.0.2)
+    httparty (0.14.0)
       multi_xml (>= 0.5.2)
     i18n (0.7.0)
-    iso8601 (0.8.6)
+    iso8601 (0.9.1)
     json (1.8.3)
-    lastfm (1.27.0)
+    lastfm (1.27.1)
       activesupport (>= 3.2.0)
       httparty
       xml-simple
-    minitest (5.8.0)
-    multi_json (1.11.2)
+    minitest (5.8.3)
     multi_xml (0.5.5)
-    oga (1.2.1)
+    net_http_timeout_errors (0.3.0)
+    oga (2.6)
       ast
       ruby-ll (~> 2.1)
-    open_uri_redirections (0.2.1)
+    open-weather (0.12.0)
+      json (~> 1)
     rake (10.4.2)
     ruby-ll (2.1.2)
       ansi
@@ -55,6 +43,10 @@ GEM
     thread_safe (0.3.5)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    video_info (2.6.1)
+      iso8601 (~> 0.9)
+      net_http_timeout_errors (~> 0.3.0)
+      oga (~> 2.2)
     xml-simple (1.1.5)
 
 PLATFORMS
@@ -64,7 +56,6 @@ DEPENDENCIES
   bundler (~> 1.9)
   rake (~> 10.0)
   rateless_bot!
-  video_info!
 
 BUNDLED WITH
-   1.10.6
+   1.13.1
