@@ -1,5 +1,6 @@
 require 'cinch'
 require 'open_weather'
+require 'countries'
 
 class Weather
   def help
@@ -31,7 +32,7 @@ class Weather
     end
 
     city = current_weather['name']
-    country = current_weather['sys']['country']
+    country = ISO3166::Country.new(current_weather['sys']['country']).name
     humidity = current_weather['main']['humidity']
     temp_celsius = current_weather['main']['temp'].round(1)
     temp_fahrenheit = (temp_celsius * 1.8 + 32).round(1)

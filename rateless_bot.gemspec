@@ -26,4 +26,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "lastfm", "1.27.1"
   spec.add_dependency "open-weather", "~> 0.12"
   spec.add_dependency "video_info", "2.6.1"
+  spec.add_dependency "countries", "1.2.5"
 end
