@@ -32,7 +32,7 @@ private
     elsif current_weather['cod'] != 200 # number is not a string; report bug
       return "Error: response code #{current_weather['cod']}"
     end
-
+    p current_weather
     city = current_weather['name']
     country = ISO3166::Country.new(current_weather['sys']['country']).name
     humidity = current_weather['main']['humidity']
@@ -41,13 +41,23 @@ private
     wind_speed_mps = current_weather['wind']['speed']
     wind_speed_mph = (wind_speed_mps * 0.000621371 * 60**2).round(2)
     wind_direction_degrees = current_weather['wind']['deg']
-    cardinal_wind_direction = degrees_to_cardinal(wind_direction_degrees)
+    
+    if !wind_direction_degrees.nil?
+      cardinal_wind_direction = degrees_to_cardinal(wind_direction_degrees)
+    end
+    
     weather_description = current_weather['weather'][0]['description']
 
     s = "Weather for #{city} (#{country}): "
     s += "#{temp_celsius}°C (#{temp_fahrenheit}°F); #{humidity}% humidity; "
-    s += "#{wind_speed_mps}m/s (#{wind_speed_mph}mph) winds "
-    s += "blowing #{cardinal_wind_direction} (#{wind_direction_degrees}°); "
+    s += "#{wind_speed_mps}m/s (#{wind_speed_mph}mph) winds"
+    
+    if wind_direction_degrees.nil?
+      s += '; '
+    else
+      s += " blowing #{cardinal_wind_direction} (#{wind_direction_degrees}°); "
+    end
+
     s += "#{weather_description}"
   end
 
