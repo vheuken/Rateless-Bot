@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rateless_bot (0.4.0)
+    rateless_bot (0.4.1)
       cinch (= 2.3.2)
       countries (= 1.2.5)
       lastfm (= 1.27.1)

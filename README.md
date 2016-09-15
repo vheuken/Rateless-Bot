@@ -15,11 +15,13 @@ Launch Options:
 
     $ rateless_bot -h
     Usage: rateless_bot [options]
-            --nick NICK                  Bot's nick (required)
-            --server SERVER              IRC server (required)
-            --channel CHANNEL            IRC channel (required)
-            --lastfm-api-key KEY         LastFM API key
-            --lastfm-api-secret SECRET   LastFM secret API key
+            --nick NICK                    Bot's nick (required)
+            --server SERVER                IRC server (required)
+            --channel CHANNEL              IRC channel (required)
+            --lastfm-api-key KEY           LastFM API key
+            --lastfm-api-secret SECRET     LastFM secret API key
+	    --open-weather-map-api-key KEY OpenWeatherMap API key
+
         -h, --help                       Prints this help
 
 Interacting with the bot:
@@ -30,7 +32,8 @@ Interacting with the bot:
     -Rateless-Bot- !roll XdY - rolls dice (replace X with number of dice and Y with number of sides)
     -Rateless-Bot- !lastfm USERNAME - gets the most recently listened-to track for a given user
     -Rateless-Bot- !8ball - Magic Eight Ball
-    
+    -Rateless-Bot- !weather CITY/ZIP - gets the current temperature for a given city/zip 
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
